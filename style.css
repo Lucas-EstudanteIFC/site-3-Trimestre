@@ -1,1 +1,15 @@
 @charset "UTF-8";
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 260px 1fr
+}
+
