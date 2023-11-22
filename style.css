@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/*Configurações Gerais*/
+:root {
+    --cor-header: #73022C;
+    --cor-fundo: #F2F2F2;
+    --cor-links: #F294C0;
+    --cor-links-visitados: #A62655;
+
+}
+
+
 * {
     margin: 0;
     border: 0;
@@ -7,9 +17,20 @@
     text-decoration: none;
 }
 
-
+/*Cabeçalho*/
 header {
+    text-align: center;
     display: grid;
-    grid-template-columns: 260px 1fr
+    grid-template-columns: 250px 1fr;
 }
 
+header, footer {
+    background-color: var(--cor-header);
+}
+
+
+
+#logo {
+    width: 15vw;
+    border-radius: 20vh;
+}
