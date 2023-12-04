@@ -7,31 +7,85 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/20231122173042/ms-icon-144x144.png" type="image/x-icon">
     <title>Conceito Esmalteria</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <!--Cabeçalho-->
     <header>
-        <img src="imagens/logo.jpeg" alt="" id="logo">
+        <a href="index.html"><img src="imagens/logo.jpeg" alt="" id="logo"></a>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Tarifas</li>
-                <li>Sobre nós Contato</li>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Serviços</li>
+                </a>
+                <a href="#">
+                    <li>Itens</li>
+                </a>
+                <a href="#">
+                    <li>Contato</li>
+                </a>
             </ul>
         </nav>
     </header>
-    <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rerum odit, possimus ipsa voluptatibus quis,
-        magni, cumque blanditiis aliquid laudantium exercitationem sit voluptatem officiis veritatis atque recusandae
-        dicta tempore accusantium!
+    <div id="titulo"><h1>Conceito <br> Esmalteria</h1></div>
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="imagens/AdobeStock_199496171_Preview.jpeg" style="width: 100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="imagens/AdobeStock_209833899_Preview.jpeg" style="width: 100%">
+            </div>
 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+        </div>
+    <main>
+        <h1>Serviços</h1>
+        <article id="servicos">
+            <br>
+            <div id="manicure">
+                <h2>Manicure</h2>
+            </div>
+            <div id="pedicure">
+                <h2>Pedicure</h2>
+            </div>
+        </article>
+        <article id="realizacoes">
+            <h2>E podem ser realizados:</h2>
+            <br>
+            <div id="estudio">
+                <p>Em nosso estúdio</p>
+                <a href="#">
+                    <h2>Acesse aqui</h2>
+                </a>
+            </div>
+            <div id="particular">
+                <p>Ou em particular</p>
+                <a href="#">
+                    <h2>Agende conosco!</h2>
+                </a>
+            </div>
+        </article>
     </main>
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sequi voluptatem nulla, autem voluptatibus sed
-            eligendi obcaecati asperiores eveniet assumenda vero, pariatur optio odit fuga? Fugit dolores recusandae
-            enim placeat?</p>
+        <p>&copy;Todos os direitos reservados</p>
+        <p>Mapa do Site</p>
+        <p>Desenvolvedores: Lucas Gabriel Martins</p>
+        <ul>
+            <li>Home</li>
+            <li>Serviços</li>
+            <li>Itens</li>
+            <li>Sobre Nós</li>
+        </ul>
     </footer>
 </body>
 

@@ -2,11 +2,10 @@
 
 /*Configurações Gerais*/
 :root {
-    --cor-header: #73022C;
+    --cor-header: #990139;
     --cor-fundo: #F2F2F2;
     --cor-links: #F294C0;
     --cor-links-visitados: #A62655;
-
 }
 
 * {
@@ -14,32 +13,170 @@
     border: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: var(--cor-header);
+    color: white;
+    padding: 2px;
 }
 
 /*Cabeçalho*/
 header {
     display: grid;
     grid-template-columns: 250px 1fr;
+    margin: auto;
+    padding: auto;
 }
 
-header,
-footer {
-    background-color: var(--cor-fundo);
+header a {
+    color: white;
 }
 
 #logo {
-    width: 10vw;
-    border-radius: 24vh;
+    width: 12vw;
+    border-radius: 25vh;
     display: block;
     margin: auto;
 }
 
-ul {
+header ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px 1vw auto auto;
+    text-align: right;
 }
 
-li {
-    padding: 60px;
+/*Página: Index*/
+
+/*Titúlo*/
+#titulo {
+    text-align: center;
+    background-color: #F294C0;
+}
+
+/*Main*/
+
+main {
+    display: grid;
+    grid-template-rows: 25px 1fr 1fr 1fr;
+}
+
+article {
+    display: inherit;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Carrossel*/
+.slideshow-container {
+    width: 100%;
+    position: relative;
     margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*Serviços*/
+
+#manicure {
+    background-image: url(imagens/AdobeStock_224846652_Preview.jpeg);
+}
+
+#manicure h2 {
+    position: relative;
+    
+}
+
+#pedicure {
+    background-image: url(imagens/AdobeStock_119580980_Preview.jpeg);
+}
+
+
+/*Rodapé*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Media: Tablet (850px)*/
+@media (max-width: 850px) {
+
+}
+
+/*Media: Mobile (450px)*/
+@media (max-width: 450px){
+
 }
