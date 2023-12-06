@@ -62,7 +62,7 @@ header ul {
 
 main {
     display: grid;
-    grid-template-rows: 25px 1fr 1fr 1fr;
+    grid-template-rows: 25px 1fr 1fr;
 }
 
 article {
@@ -79,6 +79,17 @@ article {
 
 .mySlides {
     display: none;
+    height: 300px;
+    overflow: hidden;
+}
+
+.mySlides img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.mySlides:first-child {
+    display: block;
 }
 
 .prev,
@@ -150,19 +161,14 @@ article {
 }
 
 /*Serviços*/
-
-#manicure {
-    background-image: url(imagens/AdobeStock_224846652_Preview.jpeg);
+#servicos {
+    max-width: 750px;
 }
 
-#manicure h2 {
-    position: relative;
-    
+#servicos img {
+    display: inline-block;
 }
 
-#pedicure {
-    background-image: url(imagens/AdobeStock_119580980_Preview.jpeg);
-}
 
 
 /*Rodapé*/
