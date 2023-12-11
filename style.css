@@ -61,13 +61,20 @@ header ul {
 /*Main*/
 
 main {
-    display: grid;
-    grid-template-rows: 25px 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 article {
     display: inherit;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+
+}
+
+article img {
+    max-width: 25vw;
+    display: block;
+    flex-wrap: wrap;
 }
 
 /*Carrossel*/
@@ -159,17 +166,6 @@ article {
         opacity: 1
     }
 }
-
-/*Serviços*/
-#servicos {
-    max-width: 750px;
-}
-
-#servicos img {
-    display: inline-block;
-}
-
-
 
 /*Rodapé*/
 footer {
